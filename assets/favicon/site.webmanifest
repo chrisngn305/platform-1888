@@ -1,0 +1,11 @@
+{
+  "name": "Platform 1888",
+  "short_name": "Platform 1888",
+  "icons": [
+    { "src": "/assets/favicon/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/favicon/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#2B2B2B",
+  "background_color": "#2B2B2B",
+  "display": "standalone"
+}
