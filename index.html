@@ -127,6 +127,12 @@
   .btn-submit { background: #2B2B2B; color: #F4EEE2; border: none; padding: 15px 38px; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; border-radius: 2px; cursor: pointer; transition: background 0.2s ease; }
   .btn-submit:hover { background: #8B5A2B; }
 
+  .btn-menu-pdf { display: inline-block; background: transparent; color: #F4EEE2; padding: 15px 34px; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; border: 1.5px solid #cf9a5f; border-radius: 2px; transition: background 0.2s ease, color 0.2s ease; }
+  .btn-menu-pdf:hover { background: #cf9a5f; color: #2B2B2B; }
+
+  .menu-cat-card { border: 1px solid rgba(244,238,226,0.16); border-radius: 3px; padding: 22px 24px; background: rgba(244,238,226,0.03); transition: border-color 0.2s ease, background 0.2s ease; }
+  .menu-cat-card:hover { border-color: rgba(207,154,95,0.55); background: rgba(244,238,226,0.05); }
+
   @media (max-width: 720px) {
     nav .nav-links { gap: 16px !important; font-size: 11px !important; }
     form.contact-form { grid-template-columns: 1fr !important; }
@@ -201,6 +207,40 @@
       <div style="text-align: center; margin-bottom: 54px;">
         <div style="font-family: 'Karla', sans-serif; font-size: 12px; letter-spacing: 0.36em; text-transform: uppercase; color: #cf9a5f; font-weight: 700; margin-bottom: 12px;">All Day, Every Day</div>
         <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(32px, 5.5vw, 52px); letter-spacing: 0.08em; text-transform: uppercase;">The Menu</h2>
+      </div>
+
+      <!-- Menu Categories Overview -->
+      <div style="margin-bottom: 60px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px;">
+          <h3 style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 24px; color: #F4EEE2; white-space: nowrap;">More From The Kitchen</h3>
+          <div style="flex: 1; height: 1px; background: rgba(244,238,226,0.22);"></div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px;">
+          <div class="menu-cat-card">
+            <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 17px; color: #cf9a5f; letter-spacing: 0.02em; margin-bottom: 6px;">All-Day Breakfast</div>
+            <p style="font-size: 13.5px; line-height: 1.6; color: rgba(244,238,226,0.68);">1888 Signature Classics, eggs, benedicts &amp; fritters, served all day.</p>
+          </div>
+          <div class="menu-cat-card">
+            <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 17px; color: #cf9a5f; letter-spacing: 0.02em; margin-bottom: 6px;">Vietnamese Signature</div>
+            <p style="font-size: 13.5px; line-height: 1.6; color: rgba(244,238,226,0.68);">Bò né sizzling plate, bò kho beef stew &amp; xíu mại pork meatballs.</p>
+          </div>
+          <div class="menu-cat-card">
+            <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 17px; color: #cf9a5f; letter-spacing: 0.02em; margin-bottom: 6px;">Bánh Mì</div>
+            <p style="font-size: 13.5px; line-height: 1.6; color: rgba(244,238,226,0.68);">Pâté, house mayo &amp; pickles on a crusty baguette, your choice of filling.</p>
+          </div>
+          <div class="menu-cat-card">
+            <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 17px; color: #cf9a5f; letter-spacing: 0.02em; margin-bottom: 6px;">Noodle / Rice Bowls</div>
+            <p style="font-size: 13.5px; line-height: 1.6; color: rgba(244,238,226,0.68);">Bún vermicelli, herbs &amp; pickles with your choice of protein.</p>
+          </div>
+          <div class="menu-cat-card">
+            <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 17px; color: #cf9a5f; letter-spacing: 0.02em; margin-bottom: 6px;">Phở</div>
+            <p style="font-size: 13.5px; line-height: 1.6; color: rgba(244,238,226,0.68);">Our signature Vietnamese noodle soup — đặc biệt, tái, tái bò viên, tái nạm or gà.</p>
+          </div>
+          <div class="menu-cat-card">
+            <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 17px; color: #cf9a5f; letter-spacing: 0.02em; margin-bottom: 6px;">Fresh &amp; Crispy Rolls</div>
+            <p style="font-size: 13.5px; line-height: 1.6; color: rgba(244,238,226,0.68);">Rice paper rolls &amp; crispy fried spring rolls with dipping sauce.</p>
+          </div>
+        </div>
       </div>
 
       <!-- All Day Breakfast -->
@@ -353,6 +393,10 @@
       </div>
 
       <p style="text-align: center; font-size: 12.5px; letter-spacing: 0.06em; color: rgba(244,238,226,0.5); margin-top: 8px; line-height: 1.7;">VG is Vegan · DF is Dairy Free · GF is Gluten Free &nbsp;|&nbsp; Menu changes seasonally. Prices to be confirmed before publishing.</p>
+
+      <div style="text-align: center; margin-top: 46px;">
+        <a href="assets/Platform_1888_menu.pdf" target="_blank" rel="noopener" class="btn-menu-pdf">View Full Menu (PDF)</a>
+      </div>
     </div>
   </section>
 
