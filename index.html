@@ -133,9 +133,27 @@
   .menu-cat-card { border: 1px solid rgba(244,238,226,0.16); border-radius: 3px; padding: 22px 24px; background: rgba(244,238,226,0.03); transition: border-color 0.2s ease, background 0.2s ease; }
   .menu-cat-card:hover { border-color: rgba(207,154,95,0.55); background: rgba(244,238,226,0.05); }
 
+  .story-card { border: 1px solid rgba(43,43,43,0.12); border-radius: 3px; padding: 26px 24px; background: rgba(43,43,43,0.02); transition: border-color 0.2s ease, background 0.2s ease; }
+  .story-card:hover { border-color: rgba(139,90,43,0.4); background: rgba(43,43,43,0.035); }
+  .story-card-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 18.5px; color: #8B5A2B; letter-spacing: 0.01em; margin-bottom: 16px; line-height: 1.3; }
+  .story-item { font-size: 14.5px; line-height: 1.7; color: #423a30; text-align: left; }
+  .story-item + .story-item { margin-top: 14px; }
+  .story-item strong { color: #2B2B2B; font-weight: 700; }
+
   @media (max-width: 720px) {
     nav .nav-links { gap: 16px !important; font-size: 11px !important; }
     form.contact-form { grid-template-columns: 1fr !important; }
+  }
+
+  @media (max-width: 620px) {
+    header nav { flex-wrap: wrap; row-gap: 10px; }
+    nav .nav-links { flex-basis: 100%; justify-content: center; gap: 14px !important; }
+    .menu-section-head { flex-wrap: wrap; row-gap: 6px; }
+    .menu-section-tag { white-space: normal !important; flex-basis: 100%; }
+  }
+
+  @media (max-width: 400px) {
+    .brand-name { font-size: 16px !important; letter-spacing: 0.18em !important; }
   }
 </style>
 </head>
@@ -148,7 +166,7 @@
     <nav style="max-width: 1200px; margin: 0 auto; padding: 12px 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
       <a href="#top" style="display: flex; align-items: center; gap: 12px; color: #2B2B2B;">
         <img src="assets/logo.jpeg" alt="Platform 1888 badge" width="46" height="46" style="border-radius: 50%; display: block; object-fit: cover;">
-        <span style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 20px; letter-spacing: 0.32em; text-transform: uppercase; line-height: 1;">Platform<span style="color: #8B5A2B;"> 1888</span></span>
+        <span class="brand-name" style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 20px; letter-spacing: 0.32em; text-transform: uppercase; line-height: 1;">Platform<span style="color: #8B5A2B;"> 1888</span></span>
       </a>
       <div class="nav-links" style="display: flex; align-items: center; gap: 30px; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600;">
         <a href="#about" style="color: #2B2B2B;">Our Story</a>
@@ -189,16 +207,40 @@
   </div>
 
   <!-- ABOUT -->
-  <section id="about" style="padding: 72px 28px; max-width: 940px; margin: 0 auto;">
+  <section id="about" style="padding: 72px 28px; max-width: 1080px; margin: 0 auto;">
     <div style="text-align: center; margin-bottom: 40px;">
       <div style="font-family: 'Karla', sans-serif; font-size: 12px; letter-spacing: 0.36em; text-transform: uppercase; color: #8B5A2B; font-weight: 700; margin-bottom: 12px;">Our Story</div>
       <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(30px, 5vw, 46px); letter-spacing: 0.06em; text-transform: uppercase;">Between the Platform &amp; Your Plate</h2>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 34px; font-size: 16.5px; line-height: 1.8; color: #423a30;">
-      <p>In 1888, the first steam trains pulled into Geebung Station and a neighbourhood began to gather around the tracks. More than a century on, we take our name from that year, a nod to the heritage line that still runs past our door and the community that grew alongside it.</p>
-      <p>Our kitchen brings the warmth of Vietnamese cooking to the corner cafe: fragrant phin-brewed coffee, sizzling bò né, and all-day breakfasts made from scratch. The phin filter in our badge sits where a locomotive's smokestack would, two traditions and one steam.</p>
-      <p>We're a local place, first and always. No franchise playbook and no rush, just good coffee, honest food, and a friendly stop for anyone stepping off the 6am train or wandering in on a slow Sunday. Pull up a chair; you're on Platform 1888 time now.</p>
+
+    <div style="max-width: 720px; margin: 0 auto; font-size: 16.5px; line-height: 1.8; color: #423a30; text-align: center;">
+      <p>Welcome to Platform 1888, where Vietnamese street food meets classic Australian breakfast culture in the heart of Geebung.</p>
+      <p style="margin-top: 18px;">Named in honour of the historic year Geebung Train Station first opened, Platform 1888 offers a warm, welcoming haven for daily commuters, local families, and food lovers alike. Whether you're stopping by for your morning coffee on the run or settling in for a relaxed feast with friends, our space is built around great taste, comfort, and community.</p>
     </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 24px; margin-top: 48px;">
+      <div class="story-card">
+        <h3 class="story-card-title">Vietnamese Breakfast &amp; Street Food Favourites</h3>
+        <p class="story-item"><strong>Sizzling Bò Né:</strong> Tender, marinated steak and fried eggs served sizzling on a cast-iron plate with savoury pâté, paired with a hot, crispy Vietnamese baguette.</p>
+        <p class="story-item"><strong>Artisanal Bánh Mì:</strong> Warm, crusty baguettes packed with fresh herbs and your choice of Crispy Roast Pork Belly, Char-Grilled Pork, or Fragrant Lemongrass Chicken.</p>
+        <p class="story-item"><strong>Aromatic Phở:</strong> Traditional, slow-simmered beef or chicken noodle soup crafted with fresh herbs and deep, soul-warming broth.</p>
+        <p class="story-item"><strong>Fresh Rice Paper Rolls:</strong> Light, vibrant rolls hand-rolled fresh daily with fragrant herbs and dipping sauces.</p>
+        <p class="story-item"><strong>Noodle Bowls &amp; Rice Dishes:</strong> Generous, refreshing bowls topped with your choice of crispy pork, grilled pork, or lemongrass chicken.</p>
+      </div>
+      <div class="story-card">
+        <h3 class="story-card-title">Classic Australian Cafe Dining</h3>
+        <p class="story-item"><strong>Hearty Breakfasts &amp; Gourmet Burgers:</strong> Classic morning staples, loaded breakfast plates, and juicy lunch burgers crafted from premium ingredients.</p>
+        <p class="story-item"><strong>Artisanal Pastries &amp; Sweet Treats:</strong> A freshly baked selection of gourmet cakes, slices, and French-style patisserie items.</p>
+        <p class="story-item"><strong>Inclusive Dining:</strong> Thoughtfully crafted vegan, vegetarian, and gluten-free options across the menu.</p>
+      </div>
+      <div class="story-card">
+        <h3 class="story-card-title">Specialty Beverages &amp; Refreshments</h3>
+        <p class="story-item"><strong>Premium Specialty Coffee:</strong> Proudly brewing locally roasted Fonzie Abbott coffee for a rich, bold, and perfect cup every time.</p>
+        <p class="story-item"><strong>House-Made Drinks:</strong> Creamy handcrafted milkshakes, fresh cold-pressed juices, tropical fruit smoothies, and nutrient-packed Açaí Bowls loaded with fresh fruit and crunch.</p>
+      </div>
+    </div>
+
+    <p style="max-width: 720px; margin: 44px auto 0; font-size: 16.5px; line-height: 1.8; color: #423a30; text-align: center;">Conveniently located just steps from Geebung Station, so stop in today for exceptional coffee, genuine flavours, and warm local hospitality.</p>
   </section>
 
   <!-- MENU -->
@@ -211,11 +253,11 @@
 
       <!-- Menu Categories Overview -->
       <div style="margin-bottom: 60px;">
-        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px;">
+        <div class="menu-section-head" style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px;">
           <h3 style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 24px; color: #F4EEE2; white-space: nowrap;">More From The Kitchen</h3>
           <div style="flex: 1; height: 1px; background: rgba(244,238,226,0.22);"></div>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 18px;">
           <div class="menu-cat-card">
             <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 17px; color: #cf9a5f; letter-spacing: 0.02em; margin-bottom: 6px;">All-Day Breakfast</div>
             <p style="font-size: 13.5px; line-height: 1.6; color: rgba(244,238,226,0.68);">1888 Signature Classics, eggs, benedicts &amp; fritters, served all day.</p>
@@ -245,10 +287,10 @@
 
       <!-- All Day Breakfast -->
       <div style="margin-bottom: 52px;">
-        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px;">
+        <div class="menu-section-head" style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px;">
           <h3 style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 24px; color: #F4EEE2; white-space: nowrap;">All Day Breakfast</h3>
           <div style="flex: 1; height: 1px; background: rgba(244,238,226,0.22);"></div>
-          <span style="font-family: 'Karla', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #cf9a5f; font-weight: 600; white-space: nowrap;">1888 Signature Classics</span>
+          <span class="menu-section-tag" style="font-family: 'Karla', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #cf9a5f; font-weight: 600; white-space: nowrap;">1888 Signature Classics</span>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -324,10 +366,10 @@
 
       <!-- Sweet Tooth Specials -->
       <div style="margin-bottom: 52px;">
-        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px;">
+        <div class="menu-section-head" style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px;">
           <h3 style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 24px; color: #F4EEE2; white-space: nowrap;">Sweet Tooth Specials</h3>
           <div style="flex: 1; height: 1px; background: rgba(244,238,226,0.22);"></div>
-          <span style="font-family: 'Karla', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #cf9a5f; font-weight: 600; white-space: nowrap;">Bowls &amp; Sweets</span>
+          <span class="menu-section-tag" style="font-family: 'Karla', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #cf9a5f; font-weight: 600; white-space: nowrap;">Bowls &amp; Sweets</span>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -355,10 +397,10 @@
 
       <!-- Little Conductors -->
       <div style="margin-bottom: 52px;">
-        <div style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px;">
+        <div class="menu-section-head" style="display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px;">
           <h3 style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 24px; color: #F4EEE2; white-space: nowrap;">Little Conductors</h3>
           <div style="flex: 1; height: 1px; background: rgba(244,238,226,0.22);"></div>
-          <span style="font-family: 'Karla', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #cf9a5f; font-weight: 600; white-space: nowrap;">Kids' Menu</span>
+          <span class="menu-section-tag" style="font-family: 'Karla', sans-serif; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #cf9a5f; font-weight: 600; white-space: nowrap;">Kids' Menu</span>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -406,7 +448,7 @@
       <div style="font-family: 'Karla', sans-serif; font-size: 12px; letter-spacing: 0.36em; text-transform: uppercase; color: #8B5A2B; font-weight: 700; margin-bottom: 12px;">Find Us</div>
       <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: clamp(30px, 5vw, 46px); letter-spacing: 0.06em; text-transform: uppercase;">Location &amp; Hours</h2>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 36px; align-items: stretch;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 36px; align-items: stretch;">
       <div style="display: flex; flex-direction: column; gap: 28px;">
         <div>
           <div style="font-family: 'Karla', sans-serif; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #8B5A2B; font-weight: 700; margin-bottom: 8px;">Where</div>
@@ -471,7 +513,7 @@
 
   <!-- FOOTER -->
   <footer style="background: #2B2B2B; color: #F4EEE2; padding: 56px 28px 34px;">
-    <div style="max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 36px; align-items: start;">
+    <div style="max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 36px; align-items: start;">
       <div style="display: flex; align-items: center; gap: 14px;">
         <img src="assets/logo.jpeg" alt="Platform 1888 badge" width="64" height="64" loading="lazy" decoding="async" style="border-radius: 50%; display: block; object-fit: cover;">
         <div>
