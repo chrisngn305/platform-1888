@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Platform 1888: Vietnamese Kitchen &amp; Coffee, Geebung</title>
-<meta name="description" content="Platform 1888 brings Vietnamese coffee and cuisine to Geebung, right next to Geebung Station. Open every day, 6am–3pm.">
+<meta name="description" content="Platform 1888 brings Vietnamese coffee and cuisine to Geebung, right next to Geebung Station. Open Mon–Fri 6:30am–3pm, Sat–Sun 7am–1pm.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://platform1888.com.au/">
 <meta name="theme-color" content="#2B2B2B">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Platform 1888">
 <meta property="og:title" content="Platform 1888: Vietnamese Kitchen &amp; Coffee, Geebung">
-<meta property="og:description" content="Right next to Geebung Station. Vietnamese coffee, bò né, and all-day breakfast in Geebung QLD. Open every day, 6am–3pm.">
+<meta property="og:description" content="Right next to Geebung Station. Vietnamese coffee, bò né, and all-day breakfast in Geebung QLD. Open Mon–Fri 6:30am–3pm, Sat–Sun 7am–1pm.">
 <meta property="og:url" content="https://platform1888.com.au/">
 <meta property="og:image" content="https://platform1888.com.au/assets/logo.jpeg">
 <meta property="og:image:width" content="1024">
@@ -26,7 +26,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Platform 1888: Vietnamese Kitchen &amp; Coffee, Geebung">
-<meta name="twitter:description" content="Right next to Geebung Station. Vietnamese coffee, bò né, and all-day breakfast in Geebung QLD. Open every day, 6am–3pm.">
+<meta name="twitter:description" content="Right next to Geebung Station. Vietnamese coffee, bò né, and all-day breakfast in Geebung QLD. Open Mon–Fri 6:30am–3pm, Sat–Sun 7am–1pm.">
 <meta name="twitter:image" content="https://platform1888.com.au/assets/logo.jpeg">
 <meta name="twitter:image:alt" content="Platform 1888 badge logo for Vietnamese Kitchen and Coffee, Geebung">
 
@@ -62,12 +62,10 @@
     "addressCountry": "AU"
   },
   "hasMap": "https://www.google.com/maps?q=2-6+Railway+Parade,+Geebung+QLD+4034",
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "06:00",
-    "closes": "15:00"
-  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "06:30", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "07:00", "closes": "13:00" }
+  ],
   "hasMenu": {
     "@type": "Menu",
     "name": "Platform 1888 Menu",
@@ -76,12 +74,12 @@
         "@type": "MenuSection",
         "name": "All Day Breakfast",
         "hasMenuItem": [
-          { "@type": "MenuItem", "name": "Bánh Mì Bò Né (1888 Beef Sizzling Plate)", "description": "A sizzling Vietnamese street-food classic combining bò né (beef steak platter) with crispy Vietnamese baguette. Served on a hot plate with two fried eggs, pâté, and house-made special sauce.", "offers": { "@type": "Offer", "price": "23.90", "priceCurrency": "AUD" } },
+          { "@type": "MenuItem", "name": "Bánh Mì Bò Né (1888 Beef Sizzling Plate)", "description": "A sizzling Vietnamese street-food classic combining bò né (beef steak platter) with crispy Vietnamese baguette. Served on a hot plate with two fried eggs, pâté, and house-made special sauce.", "offers": { "@type": "Offer", "price": "24.90", "priceCurrency": "AUD" } },
           { "@type": "MenuItem", "name": "The 1888 Big Breakfast Platter", "description": "Eggs your way on toasted sourdough, crispy bacon, pork sausage, garlic-roasted mushrooms, grilled thyme tomatoes, crispy hash browns, fresh avocado, corn fritter, and house-made baked beans with tomato relish and hollandaise.", "offers": { "@type": "Offer", "price": "32.90", "priceCurrency": "AUD" } },
-          { "@type": "MenuItem", "name": "Benedict at the Junction", "description": "Poached free-range eggs on toasted English muffins with wilted spinach and hollandaise. Choice of ham, crispy bacon, crumbed chicken, or smoked salmon (+$2).", "offers": { "@type": "Offer", "price": "21.90", "priceCurrency": "AUD" } },
-          { "@type": "MenuItem", "name": "Eggs Your Way", "description": "Two free-range eggs (poached, scrambled, or fried) on buttered sourdough with crispy bacon, tomato relish, and fresh herbs.", "offers": { "@type": "Offer", "price": "15.90", "priceCurrency": "AUD" } },
-          { "@type": "MenuItem", "name": "Corn Fritter Stack", "description": "Golden sweetcorn and zucchini fritters stacked with halloumi, smashed avocado, poached egg, and a drizzle of spicy hollandaise.", "offers": { "@type": "Offer", "price": "17.90", "priceCurrency": "AUD" } },
-          { "@type": "MenuItem", "name": "Smashed Avo Loaded", "description": "Seasoned avocado on toasted sourdough, whipped feta, heirloom cherry tomatoes, dukkah spice, lemon oil, and a balsamic reduction.", "offers": { "@type": "Offer", "price": "15.90", "priceCurrency": "AUD" } },
+          { "@type": "MenuItem", "name": "Benedict at the Junction", "description": "Poached free-range eggs on toasted English muffins with wilted spinach and hollandaise. Choice of ham, crispy bacon, crumbed chicken, or smoked salmon (+$2).", "offers": { "@type": "Offer", "price": "20.90", "priceCurrency": "AUD" } },
+          { "@type": "MenuItem", "name": "Eggs Your Way", "description": "Two free-range eggs (poached, scrambled, or fried) on buttered sourdough with crispy bacon, tomato relish, and fresh herbs.", "offers": { "@type": "Offer", "price": "16.90", "priceCurrency": "AUD" } },
+          { "@type": "MenuItem", "name": "Corn Fritter Stack", "description": "Golden sweetcorn and zucchini fritters stacked with halloumi, smashed avocado, poached egg, and a drizzle of spicy hollandaise.", "offers": { "@type": "Offer", "price": "18.90", "priceCurrency": "AUD" } },
+          { "@type": "MenuItem", "name": "Smashed Avo Loaded", "description": "Seasoned avocado on toasted sourdough, whipped feta, heirloom cherry tomatoes, dukkah spice, lemon oil, and a balsamic reduction.", "offers": { "@type": "Offer", "price": "13.90", "priceCurrency": "AUD" } },
           { "@type": "MenuItem", "name": "Breakfast Bruschetta", "description": "Toasted sourdough rubbed with pesto, topped with vine-ripened tomatoes and a sticky balsamic glaze.", "offers": { "@type": "Offer", "price": "15.90", "priceCurrency": "AUD" } }
         ]
       },
@@ -89,16 +87,16 @@
         "@type": "MenuSection",
         "name": "Sweet Tooth Specials",
         "hasMenuItem": [
-          { "@type": "MenuItem", "name": "Platform Açaí Bowl", "description": "Organic frozen açaí blend topped with house-baked almond granola, toasted coconut flakes, chia seeds, fresh seasonal berries, sliced banana, and a drizzle of natural peanut butter.", "suitableForDiet": ["https://schema.org/VeganDiet"], "offers": { "@type": "Offer", "price": "22.90", "priceCurrency": "AUD" } },
-          { "@type": "MenuItem", "name": "1888 Express Waffles", "description": "Belgian waffles topped with caramelised banana, berry compote, toasted macadamias, vanilla bean ice cream, and warm salted caramel syrup.", "offers": { "@type": "Offer", "price": "22.90", "priceCurrency": "AUD" } }
+          { "@type": "MenuItem", "name": "Platform Açaí Bowl", "description": "Organic frozen açaí blend topped with house-baked almond granola, toasted coconut flakes, chia seeds, fresh seasonal berries, sliced banana, and a drizzle of natural peanut butter.", "suitableForDiet": ["https://schema.org/VeganDiet"], "offers": { "@type": "Offer", "price": "18.90", "priceCurrency": "AUD" } },
+          { "@type": "MenuItem", "name": "1888 Express Waffles", "description": "Belgian waffles topped with caramelised banana, berry compote, toasted macadamias, vanilla bean ice cream, and warm salted caramel syrup.", "offers": { "@type": "Offer", "price": "20.90", "priceCurrency": "AUD" } }
         ]
       },
       {
         "@type": "MenuSection",
         "name": "Little Conductors (Kids' Menu)",
         "hasMenuItem": [
-          { "@type": "MenuItem", "name": "Mini Waffle Pop", "description": "A single Belgian waffle on a stick, drizzled with maple syrup, strawberries, and a scoop of vanilla ice cream.", "offers": { "@type": "Offer", "price": "11.90", "priceCurrency": "AUD" } },
-          { "@type": "MenuItem", "name": "Egg & Soldier Express", "description": "One poached or scrambled egg served on toast with a crispy hash brown and tomato sauce.", "offers": { "@type": "Offer", "price": "11.90", "priceCurrency": "AUD" } },
+          { "@type": "MenuItem", "name": "Mini Waffle Pop", "description": "A single Belgian waffle on a stick, drizzled with maple syrup, strawberries, and a scoop of vanilla ice cream.", "offers": { "@type": "Offer", "price": "12.90", "priceCurrency": "AUD" } },
+          { "@type": "MenuItem", "name": "Egg & Soldier Express", "description": "One poached or scrambled egg served on toast with a crispy hash brown and tomato sauce.", "offers": { "@type": "Offer", "price": "12.90", "priceCurrency": "AUD" } },
           { "@type": "MenuItem", "name": "Mini Breaky Roll", "description": "Crispy bacon and fried egg with tasty cheese, finished with a drizzle of BBQ sauce.", "offers": { "@type": "Offer", "price": "11.90", "priceCurrency": "AUD" } }
         ]
       }
@@ -300,7 +298,7 @@
             </div>
             <p style="font-size: 14.5px; line-height: 1.6; color: rgba(244,238,226,0.68); margin-top: 5px; max-width: 640px;">A sizzling Vietnamese street-food classic combining bò né (beef steak platter) with crispy Vietnamese baguette. Served on a hot plate with two fried eggs, pâté, and house-made special sauce.</p>
           </div>
-          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>23.90</div>
+          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>24.90</div>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -320,7 +318,7 @@
             </div>
             <p style="font-size: 14.5px; line-height: 1.6; color: rgba(244,238,226,0.68); margin-top: 5px; max-width: 640px;">Poached free-range eggs on toasted English muffins with wilted spinach and hollandaise. Choice of ham, crispy bacon, crumbed chicken, or smoked salmon (+$2).</p>
           </div>
-          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>21.90</div>
+          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>20.90</div>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -330,7 +328,7 @@
             </div>
             <p style="font-size: 14.5px; line-height: 1.6; color: rgba(244,238,226,0.68); margin-top: 5px; max-width: 640px;">Two free-range eggs (poached, scrambled, or fried) on buttered sourdough with crispy bacon, tomato relish, and fresh herbs.</p>
           </div>
-          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>15.90</div>
+          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>16.90</div>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -340,7 +338,7 @@
             </div>
             <p style="font-size: 14.5px; line-height: 1.6; color: rgba(244,238,226,0.68); margin-top: 5px; max-width: 640px;">Golden sweetcorn and zucchini fritters stacked with halloumi, smashed avocado, poached egg, and a drizzle of spicy hollandaise.</p>
           </div>
-          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>17.90</div>
+          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>18.90</div>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -350,7 +348,7 @@
             </div>
             <p style="font-size: 14.5px; line-height: 1.6; color: rgba(244,238,226,0.68); margin-top: 5px; max-width: 640px;">Seasoned avocado on toasted sourdough, whipped feta, heirloom cherry tomatoes, dukkah spice, lemon oil, and a balsamic reduction.</p>
           </div>
-          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>15.90</div>
+          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>13.90</div>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -381,7 +379,7 @@
             </div>
             <p style="font-size: 14.5px; line-height: 1.6; color: rgba(244,238,226,0.68); margin-top: 5px; max-width: 640px;">Organic frozen açaí blend topped with house-baked almond granola, toasted coconut flakes, chia seeds, fresh seasonal berries, sliced banana, and a drizzle of natural peanut butter.</p>
           </div>
-          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>22.90</div>
+          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>18.90</div>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -391,7 +389,7 @@
             </div>
             <p style="font-size: 14.5px; line-height: 1.6; color: rgba(244,238,226,0.68); margin-top: 5px; max-width: 640px;">Belgian waffles topped with caramelised banana, berry compote, toasted macadamias, vanilla bean ice cream, and warm salted caramel syrup.</p>
           </div>
-          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>22.90</div>
+          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>20.90</div>
         </div>
       </div>
 
@@ -410,7 +408,7 @@
             </div>
             <p style="font-size: 14.5px; line-height: 1.6; color: rgba(244,238,226,0.68); margin-top: 5px; max-width: 640px;">A single Belgian waffle on a stick, drizzled with maple syrup, strawberries, and a scoop of vanilla ice cream.</p>
           </div>
-          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>11.90</div>
+          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>12.90</div>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -420,7 +418,7 @@
             </div>
             <p style="font-size: 14.5px; line-height: 1.6; color: rgba(244,238,226,0.68); margin-top: 5px; max-width: 640px;">One poached or scrambled egg served on toast with a crispy hash brown and tomato sauce.</p>
           </div>
-          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>11.90</div>
+          <div style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px; color: #cf9a5f; white-space: nowrap;"><span style="font-size: 0.62em; font-weight: 600; vertical-align: 0.32em; margin-right: 1px;">$</span>12.90</div>
         </div>
 
         <div style="display: flex; gap: 20px; align-items: baseline; padding: 15px 0; border-bottom: 1px dashed rgba(244,238,226,0.14);">
@@ -458,8 +456,12 @@
         <div>
           <div style="font-family: 'Karla', sans-serif; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #8B5A2B; font-weight: 700; margin-bottom: 12px;">Opening Hours</div>
           <div style="display: flex; justify-content: space-between; align-items: center; padding: 13px 0; border-top: 1px solid rgba(43,43,43,0.14); border-bottom: 1px solid rgba(43,43,43,0.14);">
-            <span style="font-weight: 600; font-size: 16px;">Monday – Sunday</span>
-            <span style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 18px; color: #8B5A2B;">6:00am – 3:00pm</span>
+            <span style="font-weight: 600; font-size: 16px;">Monday – Friday</span>
+            <span style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 18px; color: #8B5A2B;">6:30am – 3:00pm</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 13px 0; border-top: 1px solid rgba(43,43,43,0.14); border-bottom: 1px solid rgba(43,43,43,0.14);">
+            <span style="font-weight: 600; font-size: 16px;">Saturday – Sunday</span>
+            <span style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 18px; color: #8B5A2B;">7:00am – 1:00pm</span>
           </div>
           <p style="font-size: 13px; color: #6b6152; margin-top: 10px;">Open every day. Kitchen &amp; coffee all day.</p>
         </div>
@@ -527,7 +529,7 @@
       </div>
       <div>
         <div style="font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #cf9a5f; font-weight: 700; margin-bottom: 12px;">Hours</div>
-        <p style="font-size: 14px; line-height: 1.8; color: rgba(244,238,226,0.82);">Every day<br>6:00am – 3:00pm</p>
+        <p style="font-size: 14px; line-height: 1.8; color: rgba(244,238,226,0.82);">Mon – Fri<br>6:30am – 3:00pm<br>Sat – Sun<br>7:00am – 1:00pm</p>
       </div>
       <div>
         <div style="font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #cf9a5f; font-weight: 700; margin-bottom: 12px;">Contact</div>
